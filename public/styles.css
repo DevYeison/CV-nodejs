@@ -1,0 +1,72 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000000;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#logo{
+    padding-top: 0.6rem;
+    height: 70vh;
+    width: 70vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    margin: 0;
+    padding-top: 0.4rem;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 320px ){
+    #logo{
+        padding-top: 20vh;
+        width: 22vh;
+        height: 25vh;
+    }
+
+    h1{
+        font-size: 1.15rem;
+        padding-right: 0.6rem;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width:375px) {
+    #logo{
+        padding-top: 20vh;
+    }
+
+    h1{
+        font-size: 5rem;
+        width: 70vh;
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width:425px) {
+    #logo{
+        padding-top: 10vh;
+        width: 24vh;
+        height: 20vh;
+    }
+
+    h1{
+        font-size: 1.3rem;
+    }
+  }
+
+  @media screen and (min-width: 425px) and (max-width:768px) {
+    #logo{
+        padding-top: 20vh;
+    }
+
+    h1{
+        font-size: 4rem;
+        width: 70vh;
+    }
+  }
