@@ -9,7 +9,8 @@ const {ONE_HOUR} = require('./src/helper/cache-time.helper')
 const {NotFoundMiddleware, ErrorMiddleware, CacheMiddleware, ParseIntMiddleware} = require('./src/middlewares');
 const mongoose = require('mongoose');
 const {PORT, MONGO_URI} = require('./src/config');
-const projectController = require('./src/controllers/project.controller')
+const projectController = require('./src/controllers/project.controller');
+const homeController = require('./src/controllers/home.controller')
 const app = express();
 const apiRoutes = express.Router();
 const router = express.Router();
@@ -18,14 +19,12 @@ apiRoutes
 .use(express.json())
 .use(cors())
 .use(helmet())
-.use(compression());
+.use(compression())
+.use(express.static('public'));
 
-apiRoutes.get('/', function(req, res){
-    return res.send('Hello world');
-});
-
+apiRoutes.get('/', homeController.get);
 apiRoutes.get('/project/:projectId', projectController.get);
-apiRoutes.get('/project', [ParseIntMiddleware, CacheMiddleware(ONE_HOUR)],projectController.getAll);
+apiRoutes.get('/project', [ParseIntMiddleware, /* CacheMiddleware(ONE_HOUR) */],projectController.getAll);
 
 router.use('/v1/api', apiRoutes);
 router.use(NotFoundMiddleware);
