@@ -1,0 +1,24 @@
+{
+  "name": "cv-nodejs",
+  "version": "1.0.0",
+  "description": "api for my cv in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toxiicsab/CV-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "curriculum",
+    "vitae"
+  ],
+  "author": "Yeison Garzon T",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Toxiicsab/CV-nodejs/issues"
+  },
+  "homepage": "https://github.com/Toxiicsab/CV-nodejs#readme"
+}
