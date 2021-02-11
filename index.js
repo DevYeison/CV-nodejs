@@ -24,7 +24,7 @@ apiRoutes
 
 apiRoutes.get('/', homeController.get);
 apiRoutes.get('/project/:projectId', projectController.get);
-apiRoutes.get('/project', [ParseIntMiddleware, CacheMiddleware(ONE_HOUR)],projectController.getAll);
+apiRoutes.get('/project', [ParseIntMiddleware, /* CacheMiddleware(ONE_HOUR) */],projectController.getAll);
 
 router.use('/v1/api', apiRoutes);
 router.use(NotFoundMiddleware);
