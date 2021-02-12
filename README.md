@@ -3,13 +3,15 @@
 <h5 style="text-align: center;">API RESTfull creada en nodejs</h5>
 
 <div style="padding-top: 10vh"></div>
+
 ## Comenzando 🚀
 
-La idea de la API es manejar las solicitudes del cliente, las solicitudes se hacen mediante un navegador web.
+_La idea de la API es manejar las solicitudes del cliente, las solicitudes se hacen mediante un navegador web_.
 
 Mira **Deployment** para conocer como desplegar el proyecto.
 
 <div style="padding-top: 5vh"></div>
+
 ### Pre-requisitos 📋
 
 _Que cosas necesitas para instalar el software_
@@ -19,6 +21,7 @@ Lo primero que tienes que tener en cuenta es tener instalado Nodejs en este caso
 ```
 
 <div style="padding-top: 5vh"></div>
+
 ### Instalación 🔧
 
 _Para la instalación ejecuta los siguientes comandos (teniendo Nodejs instalado)_
@@ -37,6 +40,7 @@ _Comandos:_
 ```
 
 <div style="padding-top: 5vh"></div>
+
 ## Deployment 📦
 
 _El despliegue en desarrollo será en la plataforma de heroku_
@@ -45,6 +49,7 @@ _El despliegue en desarrollo será en la plataforma de heroku_
 * [API: https://yeisoncv.herokuapp.com/v1/api/](https://yeisoncv.herokuapp.com/v1/api/)
 
 <div style="padding-top: 5vh"></div>
+
 ## Construido con 🛠️
 
 _Esta API fue construida con las siguientes herramientas_
@@ -66,11 +71,13 @@ _Esta API fue construida con las siguientes herramientas_
 * [path](https://www.npmjs.com/package/path) - This is an exact copy of the NodeJS ’path’ module published to the NPM registry.
 
 <div style="padding-top: 5vh"></div>
+
 ## Versionado 📌
 
 Usamos [Git](https://git-scm.com/) para el versionado.
 
 <div style="padding-top: 15vh"></div>
+
 ## Contribuyendo 🖇️
 
 Para contribuir por favor crear un pull request en [Github](https://github.com/Toxiicsab/CV-nodejs).
