@@ -25,8 +25,8 @@ apiRoutes
 .use(express.static('public'));
 
 apiRoutes.get('/', homeController.get);
-apiRoutes.get('/project/:projectId', projectController.get);
-apiRoutes.get('/project', [ParseIntMiddleware, CacheMiddleware(ONE_HOUR)], projectController.getAll);
+apiRoutes.get('/project/unique/:projectId/:resolution', projectController.get);
+apiRoutes.get('/project/img/:resolution', [ParseIntMiddleware], projectController.getAll);
 
 router.use('/v1/api', apiRoutes);
 router.use(NotFoundMiddleware);
