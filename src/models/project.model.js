@@ -18,12 +18,54 @@ const ProjectSchema = Schema(
             type: Date,
             required: true
         },
-        images: [
+        technologies:[
+           {
+            type: String,
+            unique: true
+           }
+        ],
+        320:[
             { 
                 type: String,
                 unique: true
             }
-            ]
+        ],
+        375:[
+            { 
+                type: String,
+                unique: true
+            }
+        ],
+        425:[
+            { 
+                type: String,
+                unique: true
+            }
+        ],
+        768:[
+            { 
+                type: String,
+                unique: true
+            }
+        ],
+        1024:[
+            { 
+                type: String,
+                unique: true
+            }
+        ],
+        1440:[
+            { 
+                type: String,
+                unique: true
+            }
+        ],
+        2560:[
+            { 
+                type: String,
+                unique: true
+            }
+        ]
     },
     { timestamps: { createdAt: true, updatedAt: true } }
 );
