@@ -4,8 +4,7 @@
     
     const get = async (req,res)=>{
         const { projectId, resolution} = req.params;
-        const project = await _projectService.get(projectId, resolution);
-        return res.send(project);
+        return await _projectService.get(projectId, resolution, res);    
     }
 
     const getAll= async(req,res)=>{
