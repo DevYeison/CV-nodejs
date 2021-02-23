@@ -9,7 +9,8 @@ const ProjectSchema = Schema(
         name: {
             type: String,
             trim: true,
-            required: true
+            required: true,
+            unique: true
         },
         description: {
             type: String
@@ -20,8 +21,7 @@ const ProjectSchema = Schema(
         },
         technologies:[
            {
-            type: String,
-            unique: true
+            type: String
            }
         ],
         320:[

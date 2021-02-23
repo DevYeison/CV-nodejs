@@ -57,18 +57,16 @@ const _projectModel = require('../models/project.model');
             if(err){
                 return;
             }
-            
-            JSON.stringify(oldProjects);
-            for(let i= 0; i < oldProjects.length; i++){
-                newProject['_id'] = oldProjects[i]._id;
-                newProject['name'] = oldProjects[i].name;
-                newProject['description'] = oldProjects[i].description;
-                newProject['finishDate'] = oldProjects[i].finishDate;
-                newProject['technologies'] = oldProjects[i].technologies;
-                newProject['imgs'] = oldProjects[i][resolution];
+            oldProjects.map(function (project){
+                newProject['_id'] = project._id;
+                newProject['name'] = project.name;
+                newProject['description'] = project.description;
+                newProject['finishDate'] = project.finishDate;
+                newProject['technologies'] = project.technologies;
+                newProject['imgs'] = project[resolution];
                 newProjects.push(newProject);
-            }
-
+                newProject = {};
+            });
             return res.send(newProjects);
         });
     }   
